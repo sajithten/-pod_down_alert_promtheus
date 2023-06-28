@@ -1,3 +1,4 @@
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -30,6 +31,7 @@ spec:
         - name: alertmanager
           mountPath: /alertmanager
       volumes:
+  ```
       - name: config-volume
         configMap:
           name: alertmanager-config
